@@ -57,11 +57,12 @@
             <img src='images/paper2025_ood_rf.png' width="200">
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Enhancing reliability of tumor segmentation models to out-of-distribution datasets
+            <papertitle>Random forest-based out-of-distribution detection for robust lung cancer segmentation
             </papertitle></a><br>
-            <strong>Aneesh Rangnekar</strong>, <a href="https://www.mskcc.org/profile/harini-veeraraghavan">Harini Veeraraghavan</a><br>
-            Under preparation.
-            <p style="text-align:justify;">Accurate detection and segmentation of cancerous lesions from computed tomography (CT) scans is essential for automated treatment planning and cancer treatment response assessment. While transformer-based models combined with self-supervised pretraining have shown exceptional performance when applied to in distribution (ID) datasets, their performance degrades when presented with out-of-distribution (OOD) data due to distribution and concept shifts. The models may produce clinically invalid yet highly confident segmentations, presenting a critical challenge for safe AI deployment in the clinic. This study has two goals: First, we evaluated the utility of established OOD detection methods such as MaxSoftmax and Entropy to accurately detect clinical OOD cases in the context of pretrained transformer models fine-tuned to segment lung cancers. All models utilized the hierarchical Swin transformer and were pretrained on identical sets of 10,432 unlabeled 3D CT scans involving cancer and non-cancerous conditions from head and neck to pelvis. We assessed three pretraining strategies: masked image modeling (MIM) based SimMIM, token self-distillation (iBOT), and a combination of MIM with token self-distillation called self-distilled masked image transformer (SMIT). Fine-tuned models were evaluated on independent ID test sets and four OOD scenarios: two near-OOD conditions involving non-cancerous chest CTs (pulmonary embolism and COVID-19) and two far-OOD conditions in the upper abdomen CTs (kidney cancers and non-cancerous pancreas). Second, we developed a post-hoc OOD detection method using model-independent radiomics and the hierarchical segmentation model features using random forest (RF) classifiers. A total of 172,650 images from 917 3D CTs were analyzed. The performance of models was indistinguishable in the ID scenario. In the OOD cases, standard OOD metrics were insufficient to distinguish performance of the methods. Notably, the RF classifiers trained using hierarchical features from SMIT achieved 18.89\% and 26.31\% FPR@95 on the two near-OOD scenarios, and nearly 0.00 \% FPR@95 scores on both far-OOD scenarios. Our results highlight the limitations of existing OOD methods and demonstrate that post-hoc feature-based OOD classifiers can provide an approach for safe deployment of AI models in clinical scenarios.</p>
+            <strong>Aneesh Rangnekar</strong>,  <a href="https://www.mskcc.org/profile/harini-veeraraghavan">Harini Veeraraghavan</a><br>
+            <a href="https://arxiv.org/pdf/2508.19112">arXiv</a>
+            <p style="text-align:justify;">Accurate detection and segmentation of cancerous lesions from computed tomography (CT) scans is essential for automated treatment planning and cancer treatment response assessment. Transformer-based models with self-supervised pretraining can produce reliably accurate segmentation from in-distribution (ID) data but degrade when applied to out-of-distribution (OOD) datasets. We address this challenge with RF-Deep, a random forest classifier that utilizes deep features from a pretrained transformer encoder of the segmentation model to detect OOD scans and enhance segmentation reliability. Independent testing was performed on 603 3D CT public datasets that included one ID for lung cancer segmentation and four OOD datasets comprising chest CTs with pulmonary embolism (PE) and COVID-19, and abdominal CTs with kidney cancers and healthy volunteers. RF-Deep detected OOD cases with a FPR95 of 18.26%, 27.66%, and < 0.1% on PE, COVID-19, and abdominal CTs, consistently outperforming established OOD approaches. The RF-Deep classifier provides a simple and effective approach to enhance reliability of cancer segmentation in ID and OOD scenarios.
+            </p>
           </td>
         </tr></tbody></table>
       </td></tr>
@@ -83,7 +84,7 @@
           </td>
         </tr></tbody></table>
       </td></tr>
-      
+
       <!-- Paper -->
       <tr><td>
         <table style="width:100%;border:0;border-spacing:0;margin:auto;"><tbody><tr>
@@ -127,7 +128,7 @@
             <img src='images/arxiv2024_ovarian_aiguided.png' width="200">
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Continual pretraining of medical foundation models helps combat noisy labels: a study on
+            <papertitle>Medical foundation models help combat noisy labels: a study on
               ovarian cancer tumor auto-segmentation
             </papertitle></a><br>
             <strong>Aneesh Rangnekar</strong>, <a href="https://www.mskcc.org/research-areas/labs/members/kevin-boehm">Kevin M. Boehm</a>, Emily A. Aherne, Ines Nikolovski, Natalie Gangai, Ying Liu, Dimitry Zamarin, Kara Roche, <a href="https://www.mskcc.org/research-areas/labs/sohrab-shah">Sohrab Shah</a>, <a href="https://www.mskcc.org/cancer-care/doctors/yulia-lakhman">Yulia Lakhman</a>, <a href="https://www.mskcc.org/profile/harini-veeraraghavan">Harini Veeraraghavan</a><br>
