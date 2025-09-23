@@ -24,7 +24,7 @@
             <p>
               I am a Research Fellow in the Department of Medical Physics at Memorial Sloan Kettering Cancer Center, working under the mentorship of <a href="https://www.mskcc.org/profile/harini-veeraraghavan">Dr. Harini Veeraraghavan</a>. My research focuses on applying machine learning to medical imaging to for enhancing clinical decision-making, with focus on for parameter-efficient and robust application of foundation models. I completed my PhD at <a href="https://www.rit.edu/science/chester-f-carlson-center-imaging-science">The Chester F. Carlson Center for Imaging Science at Rochester Institute of Technology (RIT)</a>, advised by <a href="https://people.rit.edu/mjhsma/">Dr. Matthew Hoffman</a> and co-advised by <a href="https://chriskanan.com/">Dr. Christopher Kanan</a> and <a href="https://www.rit.edu/dirs/directory/ejipci-emmett-ientilucci">Dr. Emmett Ientilucci</a>.
             </p>
-            <p style="text-align:center">
+            <p style="text-align:left">
               <a href="mailto:rangnea@mskcc.org">Email (MSKCC)</a> &nbsp/&nbsp
               <a href="mailto:aneesh.rangnekar@gmail.com">Email (Personal)</a> &nbsp/&nbsp
               <a href="https://github.com/aneesh3108">Github</a> &nbsp/&nbsp
@@ -74,6 +74,24 @@
       <tr><td>
         <table style="width:100%;border:0;border-spacing:0;margin:auto;"><tbody><tr>
           <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/arxiv2025_smart.png' width="200">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Self-distilled Masked Attention guided masked image modeling with noise Regularized Teacher (SMART) for medical image analysis
+            </papertitle></a><br>
+            <a href="https://www.mskcc.org/profile/jue-jiang">Jue Jiang</a>, <strong>Aneesh Rangnekar</strong>, Chloe Choi, <a href="https://www.mskcc.org/profile/harini-veeraraghavan">Harini Veeraraghavan</a><br>
+            <a href="https://arxiv.org/pdf/2310.01209">arXiv</a> / <a href="presentations/AAPM 2024 - SNAP - SMART.pdf">AAPM 2024 SNAP Oral</a>
+            <p style="text-align:justify;">SMART is a self-supervised framework designed for medical image analysis using Swin Transformers, which traditionally lack the <span style="background-color:rgb(239, 168, 168); font-style:italic;">[CLS]</span> token used in standard masked image modeling. We addressed this drawback by introducing a semantic attention module that performs global attention and identifies informative regions for masking during pretraining. To improve training stability and generalization, we incorporate a noise-regularized momentum teacher in a co-distillation setup. This approach yields a stronger foundation model, enabling more effective downstream tasks such as tumor and organ segmentation and zero-shot localization via attention maps with the <span style="background-color:rgb(239, 168, 168); font-style:italic;">[CLS]</span> token.
+
+            </p>
+          </td>
+        </tr></tbody></table>
+      </td></tr>
+
+      <!-- Paper -->
+      <tr><td>
+        <table style="width:100%;border:0;border-spacing:0;margin:auto;"><tbody><tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
             <img src='images/paper2025_ood_rf.png' width="200">
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
@@ -87,24 +105,6 @@
         </tr></tbody></table>
       </td></tr>
       
-      <!-- Paper -->
-      <tr><td>
-        <table style="width:100%;border:0;border-spacing:0;margin:auto;"><tbody><tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/arxiv2025_smart.png' width="200">
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Self-distilled Masked Attention guided masked image modeling with noise Regularized Teacher (SMART) for medical image analysis
-            </papertitle></a><br>
-            <a href="https://www.mskcc.org/profile/jue-jiang">Jue Jiang</a>, <strong>Aneesh Rangnekar</strong>, Chloe Choi, <a href="https://www.mskcc.org/profile/harini-veeraraghavan">Harini Veeraraghavan</a><br>
-            <a href="https://arxiv.org/pdf/2310.01209">arXiv</a>
-            <p style="text-align:justify;">SMART is a self-supervised framework designed for medical image analysis using Swin Transformers, which traditionally lack the <span style="background-color:rgb(239, 168, 168); font-style:italic;">[CLS]</span> token used in standard masked image modeling. We addressed this drawback by introducing a semantic attention module that performs global attention and identifies informative regions for masking during pretraining. To improve training stability and generalization, we incorporate a noise-regularized momentum teacher in a co-distillation setup. This approach yields a stronger foundation model, enabling more effective downstream tasks such as tumor and organ segmentation and zero-shot localization via attention maps with the <span style="background-color:rgb(239, 168, 168); font-style:italic;">[CLS]</span> token.
-
-            </p>
-          </td>
-        </tr></tbody></table>
-      </td></tr>
-
       <!-- Paper -->
       <tr><td>
         <table style="width:100%;border:0;border-spacing:0;margin:auto;"><tbody><tr>
@@ -203,7 +203,7 @@
             <a href="https://openaccess.thecvf.com/content/WACV2023/papers/Rangnekar_Semantic_Segmentation_With_Active_Semi-Supervised_Learning_WACV_2023_paper.pdf"><papertitle>Semantic Segmentation with Active Semi-Supervised Learning</papertitle></a><br>
             <strong>Aneesh Rangnekar</strong>, <a href="https://chriskanan.com/">Christopher Kanan</a>, <a href="https://people.rit.edu/mjhsma/">Matthew Hoffman</a><br>
             <em>WACV</em>, 2023<br>
-            <a href="https://arxiv.org/pdf/2203.10730">arXiv</a> / <a href="https://github.com/aneesh3108/S4AL">code</a>
+            <a href="https://arxiv.org/pdf/2203.10730">arXiv</a> / <a href="https://github.com/aneesh3108/S4AL">Code</a> / <a href="presentations/WACV 2023 - S4AL - Poster.pdf">Poster</a> / <a href="presentations/WACV 2023 - S4AL - Presentation.pdf">Presentation</a>
             <p style="text-align:justify;">We developed S4AL, a hybrid approach that combined semi-supervised and active learning, for data-efficient semantic segmentation. It uses a teacher–student pseudo-labeling framework to generate region-level acquisition scores, enabling querying and annotating of only the most informative regions rather than full images. We introduced two regularization techniques, confidence weighting and balanced ClassMix, that helped mitigate class imbalance and enhance quality of the acquisition metric. S4AL achieved over 95% of full-dataset performance using less than 17% of pixel annotations on CamVid and CityScapes datasets.
             </p>
           </td>
@@ -220,7 +220,7 @@
             <a href="https://bmvc2022.mpi-inf.mpg.de/0229.pdf"><papertitle>Semantic Segmentation with Active Semi-Supervised Representation Learning</papertitle></a><br>
             <strong>Aneesh Rangnekar</strong>, <a href="https://chriskanan.com/">Christopher Kanan</a>, <a href="https://people.rit.edu/mjhsma/">Matthew Hoffman</a><br>
             <em>BMVC</em>, 2022<br>
-            <a href="https://arxiv.org/pdf/2210.08403">arXiv</a>
+            <a href="https://arxiv.org/pdf/2210.08403">arXiv</a> / <a href="presentations/BMVC 2022 - S4ALv2 - Poster.pdf">Poster</a> / <a href="presentations/BMVC 2022 - S4ALv2 - Presentation.pdf">Presentation</a>
             <p style="text-align:justify;">We developed S4AL+, a hybrid framework that combines semi-supervised learning with active learning for semantic segmentation, aiming to reduce annotation costs. We replaced the conventional mean-teacher approach with self-training using noisy pseudo-labels and added a contrastive head for better feature learning of the classes. On benchmarks CamVid and CityScapes, S4AL+ achieved over 95% of full-label performance using just 12–15% of labeled data, outperforming state-of-the-art approaches at the time.
             </p>
           </td>
@@ -254,7 +254,7 @@
             <a href="https://ieeexplore.ieee.org/abstract/document/9079478/"><papertitle>AeroRIT: A New Scene for Hyperspectral Image Analysis</papertitle></a><br>
             <strong>Aneesh Rangnekar</strong> et al.<br>
             <em>IEEE TGRS</em>, 2020<br>
-            <a href="https://arxiv.org/pdf/1912.08178.pdf">arXiv</a> / <a href="https://github.com/aneesh3108/AeroRIT">code</a>
+            <a href="https://arxiv.org/pdf/1912.08178.pdf">arXiv</a> / <a href="https://github.com/aneesh3108/AeroRIT">Code</a>
             <p style="text-align:justify;">We introduced AeroRIT, a new aerial hyperspectral dataset designed specifically to support convolutional neural network (CNN) training for scene understanding. Unlike typical airborne hyperspectral datasets focused on vegetation or roads, AeroRIT includes buildings and cars, expanding the domain diversity. We design and benchmark several CNN architectures on AeroRIT, thoroughly evaluating classification accuracy, spatial consistency, and generalization across scenes. </p>
           </td>
         </tr></tbody></table>
